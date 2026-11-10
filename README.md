@@ -7,33 +7,48 @@ A small home for my personal identity assets.
 ```text
 .
 ├── brand/
-│   ├── mark.svg
-│   └── mark-dark.svg
+│   ├── mark.svg                 # Primary white ghost for dark surfaces
+│   ├── mark-dark.svg            # Light-surface variant with charcoal contour
+│   ├── mark-outline.svg
+│   ├── mark-monochrome.svg
+│   ├── mark-monochrome-dark.svg
+│   ├── mark-micro.svg
+│   ├── mark-idle.svg            # Animated SVG
+│   ├── mark-wink.svg             # Animated SVG
+│   ├── avatar.svg
+│   ├── avatar-light.svg
+│   ├── wordmark.svg
+│   └── wordmark-dark.svg
 ├── favicon/
 │   ├── favicon.svg
 │   └── favicon.ico
 └── exports/
-    ├── brand/       # PNG raster exports of the mark
-    └── favicon/     # PNG favicon exports
+    ├── brand/                   # Avatar, mark and wordmark PNGs
+    └── favicon/                 # 16–512px favicon PNGs and inspection preview
 ```
 
-## Using the mark
+## Canonical assets
 
-- `brand/mark.svg` — white mark for dark surfaces.
-- `brand/mark-dark.svg` — dark mark for light surfaces.
-- `favicon/favicon.svg` — white mark on a rounded dark tile.
-- `favicon/favicon.ico` — multi-resolution browser icon.
-- `exports/` — pre-rendered PNG sizes for contexts that need raster assets.
+- `brand/mark.svg` — primary mascot; white ghost, dark facial features, lavender shading and gold star.
+- `brand/mark-dark.svg` — light-background treatment with a restrained charcoal outline.
+- `brand/mark-outline.svg` — outline treatment.
+- `brand/mark-monochrome.svg` / `mark-monochrome-dark.svg` — one-colour alternatives.
+- `brand/mark-micro.svg` — optically simplified micro artwork for tiny contexts.
+- `brand/mark-idle.svg` / `mark-wink.svg` — optional animated SVG variants.
+- `brand/avatar.svg` / `avatar-light.svg` — square avatar masters.
+- `brand/wordmark.svg` / `wordmark-dark.svg` — horizontal wordmarks.
+- `favicon/favicon.svg` and `favicon/favicon.ico` — browser icons.
 
-Prefer the SVG files whenever the consuming platform supports them.
+### Favicons
+Available PNG sizes: 16, 32, 48, 64, 128, 180, 192, 256 and 512px.
 
-## Favicon
+### Avatars
+Available dark/light PNGs at 128, 256, 512 and 1024px.
 
-For a website, copy the favicon assets into its public/static directory and reference the SVG with an ICO fallback:
+## Palette
 
-```html
-<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-<link rel="alternate icon" href="/favicon.ico" />
-```
-
-Adjust the paths to match the consuming project's base path and asset conventions.
+- Charcoal: `#0B0B0F`
+- White: `#F8F8FA`
+- Violet: `#7C5CFF`
+- Lavender: `#A78BFA`
+- Gold: `#FFC46B`
